@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sort Letters</title>
+  <script>
+    function sortLetters() {
+      var inputString = document.getElementById('inputString').value;
+      var sortedString = inputString.toLowerCase().split('').sort().join('');
+      document.getElementById('result').innerHTML = 'Sorted string: ' + sortedString;
+    }
+  </script>
+</head>
+<body>
+
+  <label for="inputString">Enter a string:</label>
+  <input type="text" id="inputString">
+  <button onclick="sortLetters()">Sort</button>
+  <p id="result"></p>
+
+</body>
+</html>
